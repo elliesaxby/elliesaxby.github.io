@@ -1,0 +1,31 @@
+@use "../abstracts/colours" as cols;
+
+.slider-warmth {
+    -webkit-appearance: none;
+    width: 350px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, cols.$site-colour2, cols.$warm);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider-warmth::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: cols.$site-colour2;
+    border: 1px solid cols.$accent-colour;
+    cursor: pointer;
+}
+
+.slider-warmth::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}

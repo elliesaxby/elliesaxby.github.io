@@ -1,0 +1,22 @@
+@use "../abstracts/colours" as cols;
+.light {
+    background-color: cols.$site-colour2;
+    border-radius: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.light-bulb {
+    max-width: 150px;
+}
+.light h1 {
+    font-weight: 300;
+    font-size: x-large;
+}
+.light button {
+    border: none;
+    background-color: white;
+}

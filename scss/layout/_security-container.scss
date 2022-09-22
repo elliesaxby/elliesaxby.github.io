@@ -1,0 +1,48 @@
+@use "../abstracts/colours" as cols;
+.security-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    // outline: 1px solid red;
+    height: 400px;
+    width: 850px;
+    justify-items: center;
+    padding: 20px;
+    // align-items: center;
+}
+.security-container video {
+    width: 400px;
+    border-radius: 10px 10px 0px 0px;
+}
+.security h1 {
+    font-weight: 100;
+    font-size: x-large;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+.security {
+    background-color: cols.$site-colour2;
+    border-radius: 10px;
+}
+.securityheading img {
+    max-height: 15px;
+}
+.securityvideo {
+    position: relative;
+}
+.blink {
+    animation: blink 1.5s infinite;
+    position: absolute;
+    z-index: 2;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

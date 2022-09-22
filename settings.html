@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="body-container">
+            <div class="nav">
+                <div>
+                    <img src="/assets/logo.png" class="logo" />
+                </div>
+                <!-- <h1>Good morning, Charlie</h1>
+                <img src="/assets/weather.png" class="weather" />
+                <div id="clock" class="clock" onload="currentTime()"></div> -->
+
+                <div class="functionbuttons">
+                    <img src="/assets/settings.png" class="settingsbutton" />
+                    <a href="index.html"> <p1>Settings</p1> </a>
+                    <img src="/assets/language.png" class="language" />
+                    <p1>Language</p1>
+                    <img src="/assets/logout.png" class="logout" />
+                    <p1>Logout</p1>
+                </div>
+            </div>
+            <div class="all-cards">
+                <div class="card-container">
+                    <div class="light">
+                        <h1>Bedroom light</h1>
+                        <button id="mybtn">
+                            <img
+                                src="/assets/lighbulb.png"
+                                class="light-bulb"
+                            />
+                        </button>
+                        <div id="mymodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-container">
+                                    <img src="/assets/lighbulb.png" />
+                                    <h1>Brightness</h1>
+                                    <div class="slidecontainer">
+                                        <p><span id="demo"></span>%</p>
+                                        <input
+                                            type="range"
+                                            min="1"
+                                            max="100"
+                                            value="50"
+                                            class="slider"
+                                            id="myRange"
+                                        />
+                                    </div>
+                                    <div class="slidecontainer">
+                                        <h1>Warmth</h1>
+                                        <input
+                                            type="range"
+                                            min="1"
+                                            max="100"
+                                            value="50"
+                                            class="slider-warmth"
+                                            id="myRange"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle-button-cover">
+                            <div class="button-cover">
+                                <div class="button r" id="button-1">
+                                    <input type="checkbox" class="checkbox" />
+                                    <div class="knobs"></div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speaker">
+                        <h1>Living room speaker</h1>
+                        <button id="mybtnspeaker">
+                            <img
+                                src="/assets/speaker.png"
+                                class="speaker-img"
+                            />
+                        </button>
+                        <div id="mymodal1" class="modalspeaker">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-container">
+                                    <img src="/assets/speaker.png" />
+                                    <h1>Brightness</h1>
+                                    <div class="slidecontainer">
+                                        <p><span id="demo"></span>%</p>
+                                        <input
+                                            type="range"
+                                            min="1"
+                                            max="100"
+                                            value="50"
+                                            class="slider"
+                                            id="myRange"
+                                        />
+                                    </div>
+                                    <div class="slidecontainer">
+                                        <h1>Warmth</h1>
+                                        <input
+                                            type="range"
+                                            min="1"
+                                            max="100"
+                                            value="50"
+                                            class="slider-warmth"
+                                            id="myRange"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Volume: 80%</p>
+                        <div class="toggle-button-cover">
+                            <div class="button-cover">
+                                <div class="button r" id="button-1">
+                                    <input type="checkbox" class="checkbox" />
+                                    <div class="knobs"></div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="temp">
+                        <img src="/assets/hot.png" class="hot" />
+                        <p>Current temperature</p>
+                        <h1>21°</h1>
+                    </div>
+                </div>
+                <div class="security-container">
+                    <div>
+                        <div class="security">
+                            <video
+                                src="/assets/security1.mp4"
+                                autoplay
+                                loop
+                            ></video>
+                            <div class="securityheading">
+                                <h1>Back yard camera</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="security">
+                            <div class="securityvideo">
+                                <video
+                                    src="/assets/security2.mp4"
+                                    autoplay
+                                    loop
+                                ></video>
+                                <!-- <img src="/assets/dot.png" class="blink" /> -->
+                            </div>
+                            <div class="securityheading">
+                                <h1>Living room camera</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="clock.js"></script>
+            <script src="modal.js"></script>
+            <script src="slider.js"></script>
+        </div>
+    </body>
+</html>

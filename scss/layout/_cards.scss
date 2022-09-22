@@ -1,0 +1,12 @@
+@use "../abstracts/colours" as cols;
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    // outline: 1px solid red;
+    height: 400px;
+    width: 850px;
+    justify-items: center;
+    padding: 20px;
+    align-items: center;
+}

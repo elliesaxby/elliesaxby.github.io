@@ -1,0 +1,13 @@
+@use "../abstracts/colours" as cols;
+.clock {
+    size: xx-large;
+    font-weight: 300;
+    color: cols.$accent-colour;
+    display: flex;
+    align-items: center;
+    font-size: xxx-large;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 170px;
+    padding-top: 30px;
+}

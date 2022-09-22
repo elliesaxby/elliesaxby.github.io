@@ -1,0 +1,26 @@
+@use "../abstracts/colours" as cols;
+.speaker {
+    background-color: cols.$site-colour2;
+    border-radius: 20px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.speaker-img {
+    max-width: 140px;
+    // padding-bottom: 20px;
+}
+.speaker h1 {
+    font-weight: 300;
+    font-size: x-large;
+}
+.speaker p {
+    font-size: large;
+}
+.speaker button {
+    border: none;
+    background-color: white;
+}

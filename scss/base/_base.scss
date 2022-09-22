@@ -1,0 +1,31 @@
+@use "../abstracts/colours" as cols;
+@use "../layout/nav" as nav;
+@use "../abstracts/colours";
+@use "../components/logo";
+@use "../components/clock";
+@use "../components/settings";
+@use "../base/typography";
+@use "../components/logout";
+@use "../layout/cards";
+@use "../layout/body-container";
+@use "../components/light";
+@use "../components/speaker";
+@use "../components/security";
+@use "../components/switch";
+@use "../components/temp";
+@use "../layout/security-container";
+@use "../layout/all-cards";
+@use "../components/lightmodal";
+@use "../components/slider";
+@use "../components/warmth-slider";
+@use "../components/speakermodal";
+
+body {
+    background-image: linear-gradient(
+        0deg,
+        cols.$site-colour1,
+        cols.$site-colour2
+    );
+    height: 100vh;
+    margin: 0%;
+}

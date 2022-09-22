@@ -1,0 +1,24 @@
+@use "../abstracts/colours" as cols;
+.temp {
+    background-color: cols.$site-colour2;
+    border-radius: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+}
+.hot {
+    max-width: 100px;
+}
+.temp h1 {
+    font-weight: 500;
+    font-size: xxx-large;
+    margin: 0;
+}
+.temp p {
+    font-weight: 400;
+    font-size: large;
+}
